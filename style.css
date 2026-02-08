@@ -1,0 +1,108 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Helvetica, Arial, sans-serif;
+}
+
+body{
+  background:black;
+  color:white;
+}
+
+/* Header */
+
+header{
+  display:flex;
+  justify-content:space-between;
+  padding:25px 60px;
+  border-bottom:1px solid #222;
+}
+
+.logo{
+  letter-spacing:6px;
+}
+
+nav a{
+  margin-left:30px;
+  text-decoration:none;
+  color:white;
+  font-size:14px;
+  letter-spacing:2px;
+}
+
+/* Hero */
+
+.hero{
+  height:80vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+
+.hero h2{
+  font-size:60px;
+  letter-spacing:6px;
+}
+
+.hero p{
+  margin-top:20px;
+  color:gray;
+}
+
+/* Collection */
+
+.collection{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  gap:40px;
+  padding:80px;
+}
+
+.item img{
+  width:100%;
+  filter:grayscale(100%);
+  transition:0.3s;
+}
+
+.item img:hover{
+  filter:grayscale(0%);
+}
+
+.item h3{
+  margin-top:15px;
+}
+
+.item p{
+  color:gray;
+}
+
+/* About */
+
+.about{
+  padding:100px 80px;
+  text-align:center;
+  border-top:1px solid #222;
+}
+
+.about h2{
+  margin-bottom:20px;
+  letter-spacing:4px;
+}
+
+.about p{
+  color:gray;
+  max-width:600px;
+  margin:auto;
+}
+
+/* Footer */
+
+footer{
+  padding:40px;
+  text-align:center;
+  border-top:1px solid #222;
+  color:gray;
+}
